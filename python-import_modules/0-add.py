@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-import add_0
+from add_0 import add
 a = 1
 b = 2
-result = add_0.add(a, b)
+result = add(a, b)
 print("{a} + {b} = {result}".format(a=a, b=b, result=result))
