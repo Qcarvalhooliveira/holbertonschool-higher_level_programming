@@ -9,7 +9,7 @@ class Square:
         """ size: length of side of the square
             TypeError: if size is not an integer
             ValueError: if size < 0 """
-        
+
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         if size < 0:
