@@ -20,7 +20,8 @@ def matrix_divided(matrix, div):
      """
 
     if not isinstance(matrix, list):
-        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+        raise TypeError("matrix must be a matrix (list of lists)\
+                of integers/floats")
 
     row_size = len(matrix[0])
     if not all(len(row) == row_size for row in matrix):
@@ -38,7 +39,8 @@ def matrix_divided(matrix, div):
         new_row = []
         for element in row:
             if not isinstance(element, (int, float)):
-                raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+                raise TypeError("matrix must be a matrix (list of lists)\
+                        of integers/floats")
             new_element = round(element / div, 2)
             new_row.append(new_element)
         new_matrix.append(new_row)
@@ -47,4 +49,4 @@ def matrix_divided(matrix, div):
 
     if __name__ == "__main__":
         import doctest
-            doctest.testfile("tests/2-matrix_divided.txt")
+        doctest.testfile("tests/2-matrix_divided.txt")
