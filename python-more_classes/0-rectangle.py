@@ -1,6 +1,6 @@
 #!/usr/bin/python3
+"""Function that Write an empty class Rectangle that defines a rectangle"""
 
 
 class Rectangle:
-    """Defines a Rectangle"""
     pass
