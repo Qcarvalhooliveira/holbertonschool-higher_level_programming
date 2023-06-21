@@ -3,9 +3,6 @@
 
 
 class BaseGeometry:
-    def __init__(self):
-        """Constructor"""
-        pass
 
     def area(self):
         """Return area"""
