@@ -3,6 +3,7 @@
 
 
 class BaseGeometry:
+    """Determines BaseGeometry class"""
 
     def area(self):
         """Return area"""
