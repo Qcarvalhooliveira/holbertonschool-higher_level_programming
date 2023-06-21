@@ -1,10 +1,10 @@
-# **Python - Inheritance**
+# **Python - Inheritance** :snake:
 
-## **Description**
+## **Description** :speech_balloon:
 
  * Python inheritance is a powerful object-oriented programming feature that allows classes to inherit attributes and methods from other classes. Inheritance promotes code reusability and enables the creation of hierarchical relationships between classes.
 
-## **What we should learn from this project:
+## **What we should learn from this project:** :bookmark_tabs:
 
 * What is a superclass, baseclass or parentclass
 * What is a subclass
@@ -18,7 +18,7 @@
 * What is the purpose of inheritance
 * What are, when and how to use isinstance, issubclass, type and super built-in functions
 
-# **Tasks**
+# **Tasks** :books:
 
 **0. Lookup**
 
@@ -68,6 +68,6 @@ Write a class Square that inherits from Rectangle (9-rectangle.py)
 
 Write a class Square that inherits from Rectangle (9-rectangle.py). (task based on 10-square.py)
 
-# **Author**
+# **Author** :black_nib:
 
-* **Queise Carvalho** - [https://github.com/Qcarvalhooliveira][Queise Carvalho]
+* **Queise Carvalho** - [https://github.com/Qcarvalhooliveira](Queise Carvalho)
