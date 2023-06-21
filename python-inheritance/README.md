@@ -70,4 +70,4 @@ Write a class Square that inherits from Rectangle (9-rectangle.py). (task based 
 
 # **Author** :black_nib:
 
-* **Queise Carvalho** - [https://github.com/Qcarvalhooliveira](Queise Carvalho)
+* **Queise Carvalho** - [https://github.com/Qcarvalhooliveira] (Queise Carvalho)
