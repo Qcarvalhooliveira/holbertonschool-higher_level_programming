@@ -1,6 +1,6 @@
-# **Holberton School Higher Level Programming**
+# **Holberton School Higher Level Programming** :computer:
 
-## **Table of Contents**
+## **Table of Contents** :card_index_dividers:
 
 ### [Python - Hello, World](https://github.com/Qcarvalhooliveira/holbertonschool-higher_level_programming/tree/main/python-hello_world)
 
