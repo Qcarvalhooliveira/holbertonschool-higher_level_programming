@@ -26,12 +26,12 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
-        
+
     @property
     def height(self):
         """Property for the height of a rectangle"""
         return self.__height
-    
+
     @height.setter
     def height(self, value):
         """Setter function for private attribute height"""
