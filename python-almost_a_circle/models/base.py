@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """Module for class Base"""
 
+from json import dumps
+
 
 class Base:
     """Class Base that defines a base"""
@@ -13,3 +15,11 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    @staticmethod
+    def to_json_string(list_dictionaries):
+        """Returns the JSON string representation"""
+        if list_dictionaries is None:
+            return "[]"
+        else:
+            return dumps(list_dictionaries)
