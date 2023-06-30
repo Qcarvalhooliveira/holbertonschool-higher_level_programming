@@ -5,6 +5,7 @@ import unittest
 from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square
+import pep8
 import json
 
 
@@ -12,7 +13,7 @@ class TestRectangleClass(unittest.TestCase):
 
     @classmethod
     def setUp(cls):
-        """Set up the test environment by resetting the 
+        """Set up the test environment by resetting the
         counter and creating Rectangle instances"""
         Base._Base__nb_objects = 0
         cls.rect1 = Rectangle(2, 4)
@@ -26,7 +27,7 @@ class TestRectangleClass(unittest.TestCase):
         pass
 
     def test_class(self):
-        """Test that the string representation of Rectangle 
+        """Test that the string representation of Rectangle
         class matches the expected value"""
         self.assertTrue(str(Rectangle), "<class 'models.rectangle.Rectangle'>")
 
@@ -91,11 +92,12 @@ class TestRectangleClass(unittest.TestCase):
         self.assertTrue(isinstance(load_file, list))
 
     def test_args(self):
-        """Test that a TypeError is raised when arguments are 
+        """Test that a TypeError is raised when arguments are
         missing for Rectangle creation"""
         with self.assertRaises(TypeError):
             rect1 = Rectangle()
             self.rect1.area(1)
 
+
 if __name__ == '__main__':
-        unittest.main()
+    unittest.main()
