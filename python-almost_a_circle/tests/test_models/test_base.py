@@ -1,6 +1,3 @@
-#!/usr/bin/python3
-"""Unittest for base.py"""
-
 import unittest
 from models.base import Base
 from models.rectangle import Rectangle
@@ -22,17 +19,17 @@ class TestBaseClass(unittest.TestCase):
         """Clean up the environment after executing unit tests"""
         pass
 
+    def test_is_private(self):
+        """Tests if __nbv_object is private"""
+        print('__nbv_object is private')
+        self.assertTrue(hasattr(Base, '_Base__nb_objects'), 0)
+
     def test_pep8(self):
         """Test to check PEP8 compliance of the code in
            'models/base.py' file"""
         pep8_style = pep8.StyleGuide(quit=True)
         pep_check = pep8_style.check_files(['models/base.py'])
         self.assertEqual(pep_check.total_errors, 0, 'Pep8 Error in file')
-
-    def test_is_private(self):
-        """Tests if __nbv_object is private"""
-        print('__nbv_object is private')
-        self.assertTrue(hasattr(Base, '_Base__nb_objects'), 0)
 
     def test_docstring(self):
         """Tests the presence of a docstring"""
@@ -94,6 +91,12 @@ class TestBaseClass(unittest.TestCase):
         """Tests the saving of a Rectangle object to a file"""
         Rectangle.save_to_file([])
         with open('Rectangle.json', 'r') as f:
+            self.assertEqual(f.read(), '[]')
+
+    def test_square_to_file(self):
+        """Test saving an empty list of Square objects to a file"""
+        Square.save_to_file([])
+        with open('Square.json', 'r') as f:
             self.assertEqual(f.read(), '[]')
 
     def test_to_json(self):
