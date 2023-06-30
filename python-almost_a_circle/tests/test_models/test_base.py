@@ -20,9 +20,12 @@ class TestBaseClass(unittest.TestCase):
         pass
 
     def test_is_private(self):
-        """Tests if __nbv_object is private"""
-        print('__nbv_object is private')
-        self.assertTrue(hasattr(Base, '_Base__nb_objects'), 0)
+        """Tests if __nb_object is private"""
+        self.assertTrue(hasattr(Base, '_Base__nb_objects'))
+
+    def test_is_initialized(self):
+        """Tests if __nb_object initializes to zero"""
+        self.assertEqual(getattr(Base, '_Base__nb_objects'), 0)
 
     def test_pep8(self):
         """Test to check PEP8 compliance of the code in
