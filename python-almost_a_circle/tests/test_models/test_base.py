@@ -5,12 +5,12 @@ import unittest
 from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square
+import pep8
 import json
 
 
-
 class TestBaseClass(unittest.TestCase):
-   
+
     @classmethod
     def setUp(self):
         """Set up the environment for unit tests"""
@@ -21,6 +21,13 @@ class TestBaseClass(unittest.TestCase):
     def tearDownClass(self):
         """Clean up the environment after executing unit tests"""
         pass
+
+    def test_pep8(self):
+        """Test to check PEP8 compliance of the code in
+           'models/base.py' file"""
+        pep8_style = pep8.StyleGuide(quit=True)
+        pep_check = pep8_style.check_files(['models/base.py'])
+        self.assertEqual(pep_check.total_errors, 0, 'Pep8 Error in file')
 
     def test_is_private(self):
         """Tests if __nbv_object is private"""
@@ -105,9 +112,10 @@ class TestBaseClass(unittest.TestCase):
         self.assertTrue(isinstance(json_str, list))
 
     def test_from_json_to_str_2(self):
-        """Tests the conversion from None to a JSON string, 
+        """Tests the conversion from None to a JSON string,
         expected to return an empty list"""
         self.assertEqual(Base.from_json_string(None), [])
 
+
 if __name__ == '__main__':
-        unittest.main()
+    unittest.main()
