@@ -6,6 +6,7 @@ from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square
 import json
+import pep8
 
 
 class TestSquareClass(unittest.TestCase):
@@ -70,5 +71,6 @@ class TestSquareClass(unittest.TestCase):
         self.assertEqual({'id': 1, 'size': 2, 'x': 4, 'y': 0}, dict1)
         self.assertTrue(isinstance(dict1, dict))
 
+
 if __name__ == '__main__':
-            unittest.main()
+    unittest.main()
