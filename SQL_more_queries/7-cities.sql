@@ -1,10 +1,13 @@
--- Creates the database hbtn_0d_usa and the table cities (in the database hbtn_0d_usa).
--- If the database hbtn_0d_usa already exists, your script should not fail.
--- If the table cities already exists, your script should not fail.
+-- Creates the database hbtn_0d_usa (if it doesn't exist).
 CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
-CREATE TABLE IF NOT EXISTS hbtn_0d_usa.cities(
-	PRIMARY KEY(id),
-	id INT NOT NULL AUTO_INCREMENT,
-	FOREIGN KEY(state_id) REFERENCES hbtn_0_usa.states(id),
-	state_id INT NOT NULL,
-	name VARCHAR(256) NOT NULL);
+
+-- Switch to the newly created database.
+USE hbtn_0d_usa;
+
+-- Create the table 'cities' (if it doesn't exist).
+CREATE TABLE IF NOT EXISTS cities (
+	    id INT AUTO_INCREMENT PRIMARY KEY,
+	    state_id INT NOT NULL,
+	    name VARCHAR(256) NOT NULL,
+	    FOREIGN KEY (state_id) REFERENCES states (id)
+	);
