@@ -21,7 +21,7 @@ if __name__ == "__main__":
 
     for line in lines:
         """Display the results"""
-        if line[1].startswith('N'):
+        if line[1][0] == 'N':
             print(line)
 
     cursor.close()
