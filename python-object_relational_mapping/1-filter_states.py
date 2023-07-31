@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module that lists all states from the database"""
+"""Module that lists all states with a name starting with N"""
 
 import MySQLdb
 from sys import argv
@@ -17,7 +17,7 @@ if __name__ == "__main__":
     """Executing the SELECT query to retrieve all states"""
 
     lines = cursor.fetchall()
-    """Fetching all the rows returned by the query"""
+    """Fetching all the lines returned by the query"""
 
     for line in lines:
         """Display the results"""
