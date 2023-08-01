@@ -2,27 +2,22 @@
 """Module that lists all states with a name starting with N"""
 
 import MySQLdb
-from sys import argv
+import sys
 
 
 if __name__ == "__main__":
-    connection = MySQLdb.connect(host="localhost", port=3306,
-                                 user=argv[1], passwd=argv[2], db=argv[3])
+    connection = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2],
+                                 db=sys.argv[3])
     """Connecting to the MySQL server"""
 
     cursor = connection.cursor()
     """Creating a cursor object to execute queries"""
 
-    cursor.execute("SELECT * FROM states ORDER BY states.id ASC")
+    cursor.execute("SELECT * FROM states ORDER BY id ASC")
     """Executing the SELECT query to retrieve all states"""
 
-    lines = cursor.fetchall()
-    """Fetching all the lines returned by the query"""
-
-    for line in lines:
-        """Display the results"""
-        if line[1][0] == 'N':
-            print(line)
+    [print(state) for state in cursor.fetchall() if state[1][0] == "N"]
+    """Display the results"""
 
     cursor.close()
     connection.close()
