@@ -24,7 +24,7 @@ if __name__ == "__main__":
 
     print(', '.join([line[1] for line in lines]))
     """Display the results"""
-    
+
     cursor.close()
     connection.close()
     """Closing the cursor and the connection"""
