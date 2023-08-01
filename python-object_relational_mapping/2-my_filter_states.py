@@ -13,7 +13,7 @@ if __name__ == "__main__":
     cursor = connection.cursor()
     """Creating a cursor object to execute queries"""
 
-    cursor.execute("SELECT * FROM states " 
+    cursor.execute("SELECT * FROM states "
                    "WHERE name='{}' ORDER BY states.id ASC".format(argv[4]))
     """Executing the SELECT query to retrieve all states"""
 
