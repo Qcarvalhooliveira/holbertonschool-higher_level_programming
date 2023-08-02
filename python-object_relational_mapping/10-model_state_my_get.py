@@ -14,9 +14,9 @@ if __name__ == "__main__":
     """Creating a connection to the MySQL server"""
 
     state_name = argv[4]
-    """Obtaining the name of the state to be searched from the 
+    """Obtaining the name of the state to be searched from the
     command-line arguments"""
-    
+
     state_found = False
     """Initializing a boolean variable named "state_found" with False"""
 
@@ -29,7 +29,6 @@ if __name__ == "__main__":
         if state.name == state_name:
             print("{}".format(state.id))
             state_found = True
-            break
 
     if state_found is False:
         """Display the results if not found states"""
