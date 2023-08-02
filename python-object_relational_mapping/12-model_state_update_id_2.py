@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module that adds the State object “Louisiana” to the database"""
+"""Module that changes the name of a State object from the database"""
 
 from sys import argv
 from model_state import Base, State
