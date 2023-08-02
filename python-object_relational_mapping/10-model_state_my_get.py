@@ -30,7 +30,7 @@ if __name__ == "__main__":
             print("{}".format(state.id))
             state_found = True
 
-    if state_found is False:
+    if not state_found:
         """Display the results if not found states"""
         print("Not Found")
 
