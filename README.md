@@ -27,12 +27,9 @@
 ### [Python - Input/Output](https://github.com/Qcarvalhooliveira/holbertonschool-higher_level_programming/tree/main/python-input_output)
 
 ### [Python - Almost a circle](https://github.com/Qcarvalhooliveira/holbertonschool-higher_level_programming/tree/main/python-almost_a_circle)
-<<<<<<< HEAD
 
 ### [Python - Object-relational mapping](https://github.com/Qcarvalhooliveira/holbertonschool-higher_level_programming/tree/main/python-object_relational_mapping)
 
 ### [SQL - Introduction](https://github.com/Qcarvalhooliveira/holbertonschool-higher_level_programming/tree/main/SQL_introduction)
 
 ### [SQL - More queries](https://github.com/Qcarvalhooliveira/holbertonschool-higher_level_programming/tree/main/SQL_more_queries)
-=======
->>>>>>> 5ad2abac61a3169ff1d30e563d3813ac0473b853
